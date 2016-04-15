@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans  http://www.springframework.org/schema/beans/spring-beans.xsd
+                    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--<context:component-scan base-package="com.yash.training" />-->
+
+    <bean id="employee" class="com.personal.spring.core.dto.Employee">
+        <constructor-arg name="name" value="Nilesh"/>
+        <constructor-arg name="id" value="1"/>
+        <property name="role" value="Employee"/>
+    </bean>
+
+    <bean id="beanLifeCycle" class="com.personal.spring.core.lifecycle.BeanLifeCycle"/>
+
+    <!--<bean id="conditionalBean" class="com.personal.spring.core.conditional.ConditionalBean" /> -->
+
+
+</beans>
